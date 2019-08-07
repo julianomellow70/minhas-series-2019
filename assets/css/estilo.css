@@ -1,0 +1,53 @@
+/*cabecalho*/
+.header{
+  background-color: #C0392B;
+}
+  .header--title{
+  color: white;
+  text-shadow: #363636 1px 1px 10px  ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  }
+    .header--title-bgwhite{
+    background-color: white;
+    color: #C0392B;
+    }
+/*serie cover main page */
+.serie{
+  text-align: center;
+}
+  .serie--title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+  }
+  .serie--genre{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #A9A4A4;
+    display: block;
+  }
+  .serie--image{
+    display: block;
+    max-width: 328px;
+    
+  }
+  .serie--readmore{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-color:  #C0392B;  
+    display: block;
+    text-decoration: none;
+  }
+    .serie--readmore:hover{
+      background-color: #e74c3c;
+    } 
+.footer{
+  background-color : #EEEEEE;
+  color: #C0392B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12;
+}
+  .footer--image{
+    width: 25px;
+    height: 25px;
+  }
