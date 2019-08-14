@@ -1,17 +1,64 @@
-<!-- 
-  Exercício 6: marcar as listas ordenada e não ordenada; realizar a estilização.
- -->
+<DOCTYPE! hmtl>
+  <html lang = "PT-BR">  
+    <head>
+      <meta charset = "Utf-8">
+      <title>Trabalhando com listas</title>
+      <style>
+      *{
+        padding: 0; margin:0;box-sizing: border-box;
+      }
+      .menu{
+        background-color: #C0392B;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+      }
+      @media (max-width: 1000px){
+        .menu{
+          flex-direction: column;
+        }
+      }
+      .menu__item a{
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: #FFF;
+      }
+      .menu__item a:hover{
+        color:#C0392B; 
+        background-color: #fff;
+        
+      }
+      </style>
+    </head>
+    <body>
+<nav>
+    <ul class = "menu">
+        <li class = "menu__item"><a href="#" >Início</a></li>
+        <li class = "menu__item"><a href="#" >Todas as séries</a></li>
+        <li class = "menu__item"><a href="#" >Sobre</a></li>
+        <li class = "menu__item"><a href="#" >Contato</a></li>
+      </ul>      
+</nav>
 
-Listas ordenadas e não-ordenadas
-    
-Lista de atividades de estágio
-Solicitar matrícula
-Realizar o estágio
-Escrever o relatório
-Apresentar o relatório ao orientador
+<h1>ExeListas ordenadas e não-ordenadas</h1>
+<h2>Lista de atividades de estágio</h2>
+<ol>
+<li>Solicitar matrícula</li>
+<li>Realizar o estágio</li>
+<li>Escrever o relatório</li>
+<li>Apresentar o relatório ao orientador</li>
+</ol>
+<h2>Lista de frutas</h2>
+<ul>
+<li>Maça</li>
+<li>Pera</li>
+<li>Uva</li>
+<li>Banana</li>
+<ul>
+</body>
+  </html>
 
-Lista de frutas
-Maça
-Pera
-Uva
-Banana
+
+
+
