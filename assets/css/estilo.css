@@ -3,12 +3,16 @@
   padding: 0; margin: 0;
   box-sizing: border-box;
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /*cabecalho*/
 .header{
   background-color: #C0392B;
   background-image: linear-gradient(#C0392B, #e74c3c)
 }
-  .header--title{
+  .header__title{
   color: white;
   text-shadow: #363636 1px 1px 10px  ;
   font-family: 'Roboto', sans-serif;
@@ -16,12 +20,39 @@
   padding: 30px;
   text-align: center;
   }
-    .header--title-bgwhite{
+  @media(min-width: 600px){
+    .header__title{
+      text-align: left;
+      }
+  }
+    .header__title--bgwhite{
     background-color: white;
     color: #C0392B;
     border-radius: 6px;
     padding: 6px;
     }
+
+  .menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  @media(min-width: 600px){
+    .menu{
+      flex-direction: row;
+    }
+  }
+  .menu__item > a{
+    padding: 20px;
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+  }
+  .menu__item > a:hover{
+   color: #C0392B;
+   background-color: #fff;
+  }
+
 /*serie cover main page */
 .serie{
   text-align: center;
