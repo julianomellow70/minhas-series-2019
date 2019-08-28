@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minhas Séries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href = "assets/css/estilo.css" rel = "stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header class = "header ">
+   <div class = "header__title container">
+    Minhas <span class = "header__title--bgwhite">SÉRIES</span>
+  </div>
+  <nav>
+    <ul class = "menu container">
+      <li class="menu__item"><a href="#">Início</a></li>
+      <li class="menu__item"><a href="#">Séries Renovadas</a></li>
+      <li class="menu__item"><a href="#">Séries em destaque</a></li>
+      <li class="menu__item"><a href="#">Novas séries</a></li>
+      <li class="menu__item"><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  </header>
+
+<main>
+  <section class = " container ">
+    <div class="sessao_contato">
+        <form >
+            <div class = "campos">
+                <label label class = "label" for="nome">Nome:</label>
+                <input  class = "sessao_contato__textos" type="text" id = "nome">
+            </div>
+            <div class = "campos">
+                <label class = "label" for="email">E-mail:</label>
+                <input  class = "sessao_contato__textos"  type="text" id = "email">
+            </div>
+            <div class = "campos">
+              <input type="checkbox" id = "notificacoes" checked>  
+              <label class = "label" for="notificacoes">Deseja receber notificações pelo e-mail?</label>
+            </div>
+            <div class = "campos">
+              <label class = "label" style ="display: flex;" for="mensagem">Mensagem:</label>
+              <textarea  id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class = "campos">
+              <input class = "btn-enviar" type="submit" value = "Enviar">
+            </div>
+          </form>
+    </div>
+    
+  </section>
+</main>
+
+
+
+
+
+
+<footer class = "footer">
+   <div class="footer__element container">
+    Receba as novidades:
+   </div>
+   <div class="footer__element container">
+    <div>Nos siga em nossas redes sociais:</div>
+    <div>
+      <img src="assets/images/facebook.svg" alt="facebook" class = "footer__image">
+      <img src="assets/images/twitter.svg" alt="twitter" class = "footer__image">
+      <img src="assets/images/youtube.svg" alt="youtube" class = "footer__image">
+    </div>
+   
+  </div>
+</footer>
+</body>
+</html>

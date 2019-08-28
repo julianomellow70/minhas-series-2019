@@ -1,7 +1,107 @@
-<!-- 
-  Exercício 11: construa o fomulário; faça a estilização.
- -->
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FORMULÁRIOS</title>
+  <style>
+  *{
+    padding: 0; margin: 0; box-sizing: border-box;
+  }
+  .form-field{
+    padding: 5px;
+    border: 0;
+    border-bottom: 3px royalblue solid;
+    color: royalblue;
+  }
+  .container-campo{
+    margin: 10px;
+  }
 
+  .campo{
+    padding: 5px;
+    border: 0;
+    border-bottom: 3px royalblue solid;
+  }
+  .btn-salvar{
+    border:0;
+    padding: 7px;
+    color: white;
+    background-color: royalblue;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .btn-salvar:hover{
+   background-color: rgba(65,105,225,0.829);
+  }
+
+  .label{
+    color: royalblue;
+    display: inline-block;
+    min-width: 100px;
+  }
+
+  .campo-area{
+    border: 3px royalblue solid;
+    resize: none;
+    width: 600px;
+  }
+  .estados{
+    color: royalblue;
+    min-width: 200px;
+    overflow:hidden;
+  }
+  </style>
+</head>
+<body>
+  <form>
+  <div class = "container-campo">
+      <label class = "label" for="nome">Nome:</label>
+      <input class = "form-field" type="text"  id="nome" required placeholder="Informe o nome completo">  
+  </div>
+  <div class = "container-campo">
+      <label class = "label" for="sobrenome">Sobrenome:</label>
+      <input class = "form-field" type="text"  id="sobrenome" required> 
+  </div>
+  <div class = "container-campo">
+      <label class = "label" for="idade">Idade:</label>
+      <input class = "form-field" type="number"  id="idade" min = "10" max = "20"> 
+  </div>
+  <div class = "container-campo">
+      <label class = "label" for="">Sexo:</label>
+      <input type="radio"  id="sexo-masculino" name="sexo" checked> 
+      <label class = "label" for="sexo-masculino">masculino</label>
+      <input type="radio"  id="sexo-feminino" name = "sexo"> 
+      <label for="feminino">feminino</label>
+  </div>
+  <div class = "container-campo">
+    <label class = "label" for="email">Deseja receber e-mails?</label>
+    <input type="checkbox"  id="e-mail" checked>
+  </div>
+  
+  <div class = "container-campo">
+    <label class = "label" for="estado">Estado:</label>
+    <select id="estado" class = "estados">
+        <option value="-">---</option>
+      <option value="AC">Acre</option>
+      <option value="AM">Amazonas</option>
+      <option value="RO">Rondônia</option>
+      <option value="RR">Roraima</option>
+    </select>
+  </div>
+  <div class = "container-campo " style = "display : flex">
+    <label class = "label" for="obs">Observações:</label>
+    <textarea class = "campo-area"  id="obs" cols="30" rows="10"></textarea>
+  </div>
+  <div class = "container-campo">
+      <input class = "btn-salvar" type="submit"  value="Cadastrar"> 
+  </div>
+  </form>
+</body>
+</html>
+<!-- 
+ 
  Formulários
 Nome:
 Idade:
@@ -15,3 +115,5 @@ Estado:
   - Tocantins
 Mensagem:
 Aceita os termos do contrato?
+
+ -->

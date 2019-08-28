@@ -5,13 +5,19 @@
 }
 .container{
   max-width: 1200px;
+  
   margin: 0 auto;
 }
 /*cabecalho*/
 .header{
   background-color: #C0392B;
-  background-image: linear-gradient(#C0392B, #e74c3c)
+  background-image: linear-gradient(#C0392B, #e74c3c);
+  
+
+
 }
+
+
   .header__title{
   color: white;
   text-shadow: #363636 1px 1px 10px  ;
@@ -54,28 +60,35 @@
   }
 
 /*serie cover main page */
+.series{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .serie{
   text-align: center;
+  margin : 0 auto;
 }
-  .serie--title{
+  .serie__title{
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 20px  0 2.5px;
   }
-  .serie--genre{
+  .serie__genre{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #A9A4A4;
     display: block;
     padding: 2.50px 0 20px;
   }
-  .serie--image{
+  .serie__image{
     display: block;
     max-width: 328px;
     margin: 0 auto;
     border-radius: 5px;
   }
-  .serie--readmore{
+  .serie__readmore{
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     background-color:  #C0392B;  
@@ -86,7 +99,7 @@
     max-width: 328px;
     border-radius: 5px; 
   }
-    .serie--readmore:hover{
+    .serie__readmore:hover{
       background-color: #e74c3c;
     } 
 .footer{
@@ -95,14 +108,14 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12;
 }
-  .footer--image{
+  .footer__image{
     width: 25px;
     height: 25px;
     padding-top: 8px;
     margin-top : 10px;
     margin-right: 10px;
   }
-  .footer--element{
+  .footer__element{
     padding: 40px;
   }
 
@@ -110,25 +123,25 @@
 .seriedetail{
   text-align: center;
 }
-  .seriedetail--title{
+  .seriedetail__title{
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
     padding: 20px  0 2.5px;
   }
-  .seriedetail--genre{
+  .seriedetail__genre{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #A9A4A4;
     display: block;
     padding: 2.50px 0 20px;
   }
-  .seriedetail--image{
+  .seriedetail__image{
     display: block;
     max-width: 328px;
     margin: 0 auto;
     border-radius: 5px;
   }
-  .seriedetail--texto{
+  .seriedetail__texto{
     text-align: left;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -136,7 +149,7 @@
     line-height: 1.5;
     max-width: 328px;
   }
-  .seriedetail--watchtrailler{
+  .seriedetail__watchtrailler{
     font-family: 'Roboto', sans-serif;
     color: #000000;
     background-color:  #F1C40F;  
@@ -147,7 +160,7 @@
     max-width: 328px;
     border-radius: 5px; 
   }
-  .seriedetail--watchtrailler:hover{
+  .seriedetail__watchtrailler:hover{
       background-color: rgba(241, 196, 15, 0.664);
     } 
   
@@ -156,23 +169,72 @@
     background-color: rgba(169, 164, 164, 0.39);
     margin: 10px ;
   }
-  .serieevaliation--title{
+  .serieevaliation__title{
     text-align: center;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     padding: 30px 0 10px;
   }
-  .serieevaliation--images{
+  .serieevaliation__images{
     text-align: center;
     padding: 30px;
   }
-  .serieevaliation--twitter{
+  .serieevaliation__twitter{
     margin: 0 50px;
   }
-  .serieevaliation--percent{
+  .serieevaliation__percent{
     color: #27AE60;
     font-size: 37px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
   }
 
+/*sessao contato*/
+.sessao_contato{
+  margin: 100px 14px 73px 19px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sessao_contato textarea{
+ width: 600px;
+ border-radius: 1px;
+ resize: none;
+ margin: 10px 0px 0px 0px;
+ border:0;
+ border-right: 1px  #C0392B solid;
+ border-bottom: 1px  #C0392B solid;
+}
+
+.sessao_contato__textos{
+  width: 400px;
+  height: 25px;
+  border: 0;
+  border-bottom: 1px #C0392B solid;
+ }
+
+.label{
+  display: inline-block;
+  min-width: 100px;
+  color:#C0392B;
+}
+.campos{
+  margin: 20px;
+}
+
+*:focus{
+  outline: none;
+}
+
+
+
+
+
+.btn-enviar{
+  background-color: #C0392B;
+  border-radius: 5px;
+  border:0; 
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  
+}
